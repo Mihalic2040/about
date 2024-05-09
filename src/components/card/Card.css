@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,36 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.secondName {
+    color: rgb(177, 177, 177);
+}
+
+.avatar-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content {
+    max-width: 600px; /* Adjust as needed */
+}
+
+
+@media screen and (max-width: 850px) {
+    .avatar-container {
+        display: none; /* Hide the avatar container */
+    }
+}
