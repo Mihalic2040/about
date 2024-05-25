@@ -30,8 +30,8 @@ const NavBar = () => {
                   </li>
                 ))}
             </ul>
-            <h1 className='logo'></h1>
-            {/* <h1 className="logo" onClick={() => {setName(Generator())}}>{name}</h1> */}
+            {/* <h1 className='logo'></h1> */}
+            <h1 className="logo" onClick={() => {setName(Generator())}}>{name}</h1>
         </div>
     </nav>
   );

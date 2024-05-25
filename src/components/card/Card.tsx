@@ -6,17 +6,14 @@ export interface Project {
   subtitle: string;
   imageUrl: string;
   description: string;
+  link: string;
 }
 
-const projects: Project[] = [
-  {
-    title: "Cupping Therapy Sessions",
-    subtitle: "\"Unlocking the power of the mind for a brighter, more fulfilling life.\"",
-    imageUrl: "https://picsum.photos/800/600?image=1041",
-    description: "Our cupping therapy sessions are designed to alleviate muscle tension, improve blood flow, and promote overall relaxation. Using traditional cupping techniques, our experienced practitioners create a soothing and therapeutic experience to help you feel rejuvenated and revitalized."
-  }
-  // Add more projects here if needed
-];
+
+
+const redirect = (url: string) => {
+  window.location.href = url
+}
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
@@ -29,7 +26,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           <div className="projcard-bar"></div>
           <div className="projcard-description">{project.description}</div>
           <div className="projcard-tagbox">
-            <button><a href="#">Contact</a></button>
+            <a className='projcard-btn' href={project.link}>More</a>
           </div>
         </div>
       </div>
