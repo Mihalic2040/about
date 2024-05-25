@@ -1,28 +1,39 @@
-import Card from '../../components/card/Card';
+import CardGenerator from '../../components/card/Card';
+import ProjectCard from '../../components/card/Card';
+import Card, { Project } from '../../components/card/Card';
 import './Projects.css'
 
 
+
 const Projects = () => {
-    const project = {
-        logoUrl: 'https://raw.githubusercontent.com/Rosa-Devs/.github/main/images/Logo.svg',
-        projectName: 'Sample Project',
-        description: 'This is a sample project description.',
-        buttons: [
-        { text: 'Learn More', onClick: () => console.log('Learn More clicked') },
-        { text: 'GitHub', onClick: () => console.log('GitHub clicked') },
-        ],
-    };
-    return (
-        <div className="card-container">
-            <Card
-                logoUrl={project.logoUrl}
-                projectName={project.projectName}
-                description={project.description}
-                buttons={project.buttons}
-            />
+    const projects: Project[] = [
+        {
+            title: "Cupping Therapy Sessions",
+            subtitle: "\"Unlocking the power of the mind for a brighter, more fulfilling life.\"",
+            imageUrl: "https://picsum.photos/800/600?image=1041",
+            description: "Our cupping therapy sessions are designed to alleviate muscle tension, improve blood flow, and promote overall relaxation. Using traditional cupping techniques, our experienced practitioners create a soothing and therapeutic experience to help you feel rejuvenated and revitalized."
+        },{
+            title: "Cupping Therapy Sessions",
+            subtitle: "\"Unlocking the power of the mind for a brighter, more fulfilling life.\"",
+            imageUrl: "https://picsum.photos/800/600?image=1041",
+            description: "Our cupping therapy sessions are designed to alleviate muscle tension, improve blood flow, and promote overall relaxation. Using traditional cupping techniques, our experienced practitioners create a soothing and therapeutic experience to help you feel rejuvenated and revitalized."
+        },{
+            title: "Cupping Therapy Sessions",
+            subtitle: "\"Unlocking the power of the mind for a brighter, more fulfilling life.\"",
+            imageUrl: "https://picsum.photos/800/600?image=1041",
+            description: "Our cupping therapy sessions are designed to alleviate muscle tension, improve blood flow, and promote overall relaxation. Using traditional cupping techniques, our experienced practitioners create a soothing and therapeutic experience to help you feel rejuvenated and revitalized."
+        }
+        ];
+
+   return (
+    <div className="card-container">
+        <div className="projcard-container">
+        {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+        ))}
         </div>
-        
-    )
+    </div>   
+   ); 
 }
 
 export default Projects;
