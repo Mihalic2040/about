@@ -7,15 +7,15 @@ import Projects from "./pages/projects/Projects";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio/",
     element: <About></About>,
   },
   {
-    path: "/projects",
+    path: "/portfolio/projects",
     element: <Projects></Projects>
   },
   {
-    path: "/bg",
+    path: "/portfolio/bg",
     element: <Background></Background>
   }
 ]);
@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       {/* <NavBar></NavBar> */}
-      {pathname !== "/bg" && <NavBar />}
+      {pathname !== "/portfolio/bg" && <NavBar />}
       <div className="router">
         <RouterProvider router={router}/>
       </div>

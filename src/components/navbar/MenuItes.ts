@@ -1,19 +1,19 @@
 const menuItems = [
   {
     title: "About me",
-    url: "/",
+    url: "/portfolio/",
   },
   {
     title: "Projects",
-    url: "/projects",
+    url: "/portfolio/projects",
   },
   {
     title: "Contacts",
-    url: "/contacts",
+    url: "/portfolio/contacts",
   },
   {
     title: "Waves",
-    url: "/bg"
+    url: "/portfolio/bg"
   },
 ];
 
