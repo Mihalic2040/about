@@ -11,6 +11,10 @@ const menuItems = [
     title: "Contacts",
     url: "/contacts",
   },
+  {
+    title: "Waves",
+    url: "/bg"
+  },
 ];
 
 export default menuItems;
